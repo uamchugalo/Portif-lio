@@ -1,0 +1,210 @@
+* /* o * faz com que se aplique as config abaixo na pag toda (reseta) */
+{
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding:0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* limita a margem do conteudo */
+}
+:root /* Paleta de cores */ 
+{
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #6a68ff;
+    --cor-quartenaria:#6a68ff;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+body /*todo conteudo visual da pagina*/
+{
+    background-color: var(--cor-primaria); /* Define a cor de fundo do corpo da página */
+    font-family: var(--fonte-secundaria); /* Define a fonte padrão do corpo*/
+    margin: 0; /* remove a margem padrão */
+    color: var(--cor-secundaria); /* define cor da fonte */
+}
+
+header /* cabeçalho da página */
+{
+    padding: 2% 0% 0% 15%; /* Define um preenchimento no topo e na base */
+}
+
+.menu /* barra de navegação tag - nav */
+{
+    display: flex; /* Define o layout do menu como flexbox */
+    padding: 10px 5%; /* Define um preenchimento interno (10px no topo e na base, 5% nas laterais) */
+    flex-direction: row; /* Organiza os itens do menu em uma linha */
+    cursor: pointer; /* Define o cursor do mouse como ponteiro ao passar sobre o menu */
+    margin-left: 12%; /* Adiciona uma margem à esquerda de 12% */
+    gap: 100px; /* Define um espaço de 100px entre os itens do menu */
+    font-size: 1.5rem; /* Define o tamanho da fonte dos itens do menu */
+}
+
+.menu1 /*links do menu - tag a*/
+{
+    text-decoration: none; /* Remove a decoração padrão dos links */
+    color: var(--cor-terciaria); /* define cor da fonte */
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+    font-family: var(--fonte-secundaria); /* Define a fonte padrão do corpo*/
+    font-weight: 600; /* Define a espessura da fonte */
+    font-style: normal; /* Define o estilo da fonte */
+}
+
+.pai /* Main */
+{
+    margin: 5% 15%; /* Define a margem em cima/embaixo e nas laterais */
+    display: flex; /* Define o layout como flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    gap: 40px; /* Define um espaço de 40px entre os itens */
+    height: 100vh; /* Define a altura como 100% da altura da viewport */
+}
+
+.textor /* section */
+{
+    width: 615px; /* Define a largura do contêiner */
+    display: flex; /* Define o layout como flexbox */
+    justify-content: center; /* espaço entre as colunas */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    flex-direction: column; /* define a direção do flexbox */
+    gap: 30px; /* Define um espaço de 30px entre os itens */
+}
+
+.pz_titulo /* h1 */
+{
+    font-size: 2.125rem; /* Define o tamanho da fonte */
+    font-family: var(--fonte-primaria); /* Define a fonte padrão do corpo*/
+    font-weight: 400; /* Define a espessura da fonte */
+    font-style: normal; /* Define o estilo da fonte */
+}
+
+.destaque_t /* strong */
+{
+    color: var(--cor-terciaria); /* define cor da fonte */
+}
+
+.pz_texto /* p */
+{
+    font-size: 1.375rem; /* Define o tamanho da fonte */
+    font-family: var(--fonte-secundaria); /* Define a fonte padrão do corpo*/
+    font-weight: 400; /* Define a espessura da fonte */
+    font-style: normal; /* Define o estilo da fonte */
+}
+
+.links /* div links redes sociais */
+{
+    display: flex; /* Define o layout como flexbox */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    flex-direction: column; /* define a direção do flexbox */
+    gap: 28px; /* Define um espaço de 28px entre os itens */
+}
+
+.apresentação_titulo_link /* h2 */
+{
+    font-size: 1.5rem; /* Define o tamanho da fonte */
+    font-family: var(--fonte-primaria); /* Define a fonte padrão do corpo*/
+    font-weight: 400; /* Define a espessura da fonte */
+    font-style: normal; /* Define o estilo da fonte */
+    color: var(--cor-secundaria); /* define cor da fonte */
+}
+
+.button  /* Botão */
+{
+    display: flex; /* Define o layout como flexbox */
+    padding: 10px 20px; /* Define o preenchimento interno */
+    color: var(--cor-secundaria); /* define cor da fonte */
+    border-width: 2px; /* Define a largura da borda */
+    border-color: var(--cor-terciaria); /* Define a cor da borda */
+    border-style: solid; /* Define o estilo da borda */
+    border-radius: 8px; /* Define o arredondamento dos cantos */
+    cursor: pointer; /* Define o cursor do mouse como ponteiro ao passar sobre o botão */
+    text-align: center; /* Alinha o texto ao centro */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Alinha os itens ao centro horizontalmente */
+    gap: 6px; /* Define um espaço de 6px entre os itens */
+    width: 378px; /* Define a largura do botão */
+    text-decoration: none; /* Remove a decoração padrão dos links */
+    font-size: 1.125rem; /* Define o tamanho da fonte */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+.button:hover /* Estilo do botão ao passar o mouse */
+{
+    background-color: var(--cor-quartenaria); /* Define a cor de fundo ao passar o mouse */
+}
+
+footer /* Rodapé */
+{
+    background-color: var(--cor-quartenaria); /* Define a cor de fundo do rodapé */
+}
+
+.rodape /* Texto do rodapé */
+{
+    padding: 24px; /* Define o preenchimento interno */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 1.375rem; /* Define o tamanho da fonte */
+    font-family: var(--fonte-secundaria); /* Define a fonte padrão do corpo*/
+    font-weight: 400; /* Define a espessura da fonte */
+    font-style: normal; /* Define o estilo da fonte */
+    color: var(--cor-secundaria); /* define cor da fonte */
+    bottom: 0; /* Posiciona o rodapé na parte inferior */
+}
+
+@media (max-width: 1200px) 
+{       
+    header {
+        padding: 10%;
+    }
+    
+    .menu {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 12%;
+        gap: 16px;
+    }
+
+    .pai /* Main */
+    {
+        flex-direction: column-reverse;
+        padding: 5%;
+        margin: 5% 5%; /* Ajusta a margem para dispositivos menores */
+        gap: 20px; /* Ajusta o espaço entre os itens */
+    }
+
+    .textor {
+        width: auto;
+        text-align: center;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .menu {
+        font-size: 1rem; /* Ajusta o tamanho da fonte do menu para dispositivos menores */
+        flex-direction: column;
+    }
+
+    .pz_titulo /* h1 */
+    {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .pz_texto /* p */
+    {
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .apresentação_titulo_link /* h2 */
+    {
+        font-size: 1.25rem; /* Ajusta o tamanho da fonte */
+    }
+
+    .rodape /* Texto do rodapé */
+    {
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+    }
+}
